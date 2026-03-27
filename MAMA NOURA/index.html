@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماما نوره | Mama Noura - حبيبة الأولين والتالين</title>
+    <meta name="description" content="مطعم ماما نوره - حبيبة الأولين والتالين. أشهى المأكولات من الفطائر، الشاورما، المشاوي، اللحوم الطازجة والعصائر.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <h1>ماما نوره</h1>
+                <span>MAMA NOURA</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="active">الرئيسية <span>Home</span></a>
+                <a href="#menu">قائمة الطعام <span>Menu</span></a>
+                <a href="#locations">فروعنا <span>Locations</span></a>
+                <a href="#contact">تواصل معنا <span>Contact Us</span></a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:920012026" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> اطلب الآن <span>Order Now</span>
+                </a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <button class="close-menu-btn"><i class="fas fa-times"></i></button>
+            <nav class="mobile-links">
+                <a href="#home">الرئيسية <span>Home</span></a>
+                <a href="#menu">قائمة الطعام <span>Menu</span></a>
+                <a href="#locations">فروعنا <span>Locations</span></a>
+                <a href="#contact">تواصل معنا <span>Contact Us</span></a>
+            </nav>
+            <div class="mobile-nav-footer">
+                <a href="tel:920012026" class="btn btn-primary btn-block">
+                    <i class="fas fa-phone-alt"></i> اطلب الآن <span>920012026</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">الأصالة والمذاق الرائع</span>
+            <h2 class="hero-title">حبيبة الأولين والتالين</h2>
+            <p class="hero-subtitle">The Beloved of Past and Present Generations</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary btn-lg">شاهد القائمة <span>View Menu</span></a>
+                <a href="#locations" class="btn btn-outline btn-lg">فروعنا <span>Our Branches</span></a>
+            </div>
+            
+            <!-- Quick Features -->
+            <div class="features-row">
+                <div class="feature">
+                    <i class="fas fa-meteor"></i>
+                    <div>
+                        <strong>خدمة سريعة</strong>
+                        <span>Fast Service</span>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-medal"></i>
+                    <div>
+                        <strong>جودة عالية</strong>
+                        <span>High Quality</span>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <strong>مكونات طازجة</strong>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">أشهى المأكولات | Delicious Food</span>
+                <h2 class="section-title">قائمة الطعام <span>Our Menu</span></h2>
+                <div class="title-separator"></div>
+            </div>
+
+            <div class="menu-filters-wrapper">
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-filter="all">الكل <small>All</small></button>
+                    <button class="filter-btn" data-filter="pies">الفطائر <small>Pies</small></button>
+                    <button class="filter-btn" data-filter="falafel">الفلافل <small>Falafel</small></button>
+                    <button class="filter-btn" data-filter="shawarma">الشاورما <small>Shawarma</small></button>
+                    <button class="filter-btn" data-filter="burger">البرجر <small>Burger</small></button>
+                    <button class="filter-btn" data-filter="grills">المشاوي <small>Grills</small></button>
+                    <button class="filter-btn" data-filter="broasted">البروستد <small>Broasted</small></button>
+                    <button class="filter-btn" data-filter="appetizers">المقبلات <small>Appetizers</small></button>
+                    <button class="filter-btn" data-filter="breakfast">الإفطار <small>Breakfast</small></button>
+                    <button class="filter-btn" data-filter="drinks">المشروبات <small>Drinks</small></button>
+                </div>
+            </div>
+
+            <div class="menu-container">
+                
+                <!-- Category: Pies -->
+                <div class="menu-category" data-category="pies">
+                    <div class="category-header">
+                        <i class="fas fa-pizza-slice"></i>
+                        <h3>الفطائر <span>Pies</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item"><div class="item-name">فطيرة السبانخ <span>Spinach Pie</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 406 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة الزعتر <span>Thyme Pie</span></div><div class="item-details"><div class="item-price">7 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 398 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة الجبن <span>Cheese Pie</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 388 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة الجبن بالعسل <span>Cheese Pie with Honey</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 391 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة الجبن بالزيتون <span>Cheese Pie with Olives</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 289 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة الجبن بالزعتر <span>Cheese Pie with Thyme</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 312 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة اللبنة <span>Labneh Pie</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 369 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة اللبنة بالعسل <span>Labneh Pie with Honey</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 319 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة اللبنة بالزيتون <span>Labneh Pie with Olives</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 343 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة اللبنة بالزعتر <span>Labneh Pie with Thyme</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 360 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة الجبن السائل <span>Liquid Cheese Pie</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 343 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة الجبن السائل بالعسل <span>Liquid Cheese Pie with Honey</span></div><div class="item-details"><div class="item-price">10 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 464 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">فطيرة اللحم <span>Meat Pie</span></div><div class="item-details"><div class="item-price">12 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 478 سعرة</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Falafel -->
+                <div class="menu-category" data-category="falafel">
+                    <div class="category-header">
+                        <i class="fas fa-circle-notch"></i>
+                        <h3>الفلافل <span>Falafel</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item">
+                            <div class="item-name">ساندوتش فلافل <span>Falafel Sandwich</span></div>
+                            <div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 284 سعرة</div></div>
+                            <div class="item-desc">إضافة حمص <small>(+737 سعرة)</small> | إضافة بيض <small>(+650 سعرة)</small> | بيض وحمص <small>(+901 سعرة)</small></div>
+                        </div>
+                        <div class="menu-item"><div class="item-name">صحن فلافل حجم كبير <span>Falafel Large Dish</span></div><div class="item-details"><div class="item-price">15 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 2267 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن فلافل كبير مع البيض <span>Falafel Large Dish with Eggs</span></div><div class="item-details"><div class="item-price">17 <span>ريال</span></div></div></div>
+                        <div class="menu-item"><div class="item-name">6 حبات فلافل كبير <span>6 Falafel Pieces</span></div><div class="item-details"><div class="item-price">5 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 114 سعرة</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Shawarma -->
+                <div class="menu-category" data-category="shawarma">
+                    <div class="category-header">
+                        <i class="fas fa-drumstick-bite"></i>
+                        <h3>الشاورما <span>Shawarma</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item"><div class="item-name">ساندوتش شاورما الدجاج <span>Chicken Shawarma Sandwich</span></div><div class="item-details"><div class="item-price">8 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 369 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش شاورما اللحم <span>Meat Shawarma Sandwich</span></div><div class="item-details"><div class="item-price">9 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 287 سعرة</div></div></div>
+                        <div class="menu-item">
+                            <div class="item-name">صحن شاورما الدجاج <span>Chicken Shawarma Dish</span></div>
+                            <div class="item-variants">
+                                <div class="variant"><span class="v-name">وسط S.</span><div class="v-meta"><span class="item-price">30 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 1365 سعرة</span></div></div>
+                                <div class="variant"><span class="v-name">كبير L.</span><div class="v-meta"><span class="item-price">35 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 2383 سعرة</span></div></div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">صحن شاورما اللحم <span>Meat Shawarma Dish</span></div>
+                            <div class="item-variants">
+                                <div class="variant"><span class="v-name">وسط S.</span><div class="v-meta"><span class="item-price">35 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 892 سعرة</span></div></div>
+                                <div class="variant"><span class="v-name">كبير L.</span><div class="v-meta"><span class="item-price">45 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 1753 سعرة</span></div></div>
+                            </div>
+                        </div>
+                        <div class="menu-item"><div class="item-name">صحن شاورما مشكل <span>Mix Shawarma Dish</span></div><div class="item-details"><div class="item-price">50 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 1726 سعرة</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Burger -->
+                <div class="menu-category" data-category="burger">
+                    <div class="category-header">
+                        <i class="fas fa-hamburger"></i>
+                        <h3>البرجر <span>Burger</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item"><div class="item-name">برجر الدجاج مع الجبن <span>Chicken Burger with Cheese</span></div><div class="item-details"><div class="item-price">10 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 464 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">برجر اللحم مع الجبن <span>Meat Burger with Cheese</span></div><div class="item-details"><div class="item-price">12 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 478 سعرة</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Grills -->
+                <div class="menu-category" data-category="grills">
+                    <div class="category-header">
+                        <i class="fas fa-fire-alt"></i>
+                        <h3>المشاوي <span>Grills</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item"><div class="item-name">صحن كباب لحم <span>Meat Kabab Dish</span></div><div class="item-details"><div class="item-price">45 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 1150 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن شيش طاووق <span>Shish Tawouk Dish</span></div><div class="item-details"><div class="item-price">32 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 556 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن مشاوي مشكلة <span>Mixed Grill Plate</span></div><div class="item-details"><div class="item-price">46 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 757 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">أجنحة دجاج مشوية على الفحم <span>Grilled Chicken Wings</span></div><div class="item-details"><div class="item-price">24 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 826 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">نصف دجاجة مشوية على الفحم <span>Half Grilled Chicken</span></div><div class="item-details"><div class="item-price">25 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 767 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش أوصال <span>Awsal Sandwich</span></div><div class="item-details"><div class="item-price">15 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 548 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش كباب دجاج <span>Chicken Kabab Sandwich</span></div><div class="item-details"><div class="item-price">15 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 488 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش كباب لحم <span>Meat Kabab Sandwich</span></div><div class="item-details"><div class="item-price">15 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 524 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش شيش طاووق <span>Shish Tawouk Sandwich</span></div><div class="item-details"><div class="item-price">16 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 702 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن أوصال <span>Awsal Dish</span></div><div class="item-details"><div class="item-price">45 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 903 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن كباب دجاج <span>Chicken Kabab Dish</span></div><div class="item-details"><div class="item-price">45 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 941 سعرة</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Broasted -->
+                <div class="menu-category" data-category="broasted">
+                    <div class="category-header">
+                        <i class="fas fa-drumstick-bite"></i>
+                        <h3>البروستد <span>Broasted</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item"><div class="item-name">بروستد ماما نورة الذهبي المميز <span>Mama Noura Golden Broasted</span></div><div class="item-details"><div class="item-price">28 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 1689 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">أجنحة الدجاج المقلية <span>Wings Chicken Broasted</span></div><div class="item-details"><div class="item-price">22 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 1331 سعرة</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Appetizers -->
+                <div class="menu-category" data-category="appetizers">
+                    <div class="category-header">
+                        <i class="fas fa-leaf"></i>
+                        <h3>المقبلات والأطباق الجانبية <span>Appetizers & Sides</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item"><div class="item-name">صحن حمص <span>Hummus Plate</span></div><div class="item-details"><div class="item-price">13 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 756 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن تبولة <span>Tabbouleh Plate</span></div><div class="item-details"><div class="item-price">10 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 183 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن ثومية <span>Garlic Plate</span></div></div>
+                        <div class="menu-item"><div class="item-name">صحن طحينية <span>Tahini Plate</span></div></div>
+                        <div class="menu-item"><div class="item-name">صحن مخلل <span>Pickle Plate</span></div></div>
+                        <div class="menu-item"><div class="item-name">صحن متبل <span>Mutabbal Plate</span></div><div class="item-details"><div class="item-price">13 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 309 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن بابا غنوج <span>Baba Ghanouj Plate</span></div><div class="item-details"><div class="item-price">13 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 212 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن سلطة خضراء <span>Green Salad Plate</span></div><div class="item-details"><div class="item-price">10 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 190 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن ورق عنب <small>(صغير)</small> <span>Grape Leaves Plate</span></div><div class="item-details"><div class="item-price">9 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 206 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">صحن مقبلات مشكل <small>(صغير)</small> <span>Mix Appetizer</span></div><div class="item-details"><div class="item-price">20 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 516 سعرة</div></div></div>
+                        <div class="menu-item"><div class="item-name">بطاطس مقلية طازجة <small>(صغير)</small> <span>Fresh French Fries</span></div><div class="item-details"><div class="item-price">10 <span>ريال</span></div><div class="item-calories"><i class="fas fa-fire"></i> 464 سعرة</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Breakfast -->
+                <div class="menu-category" data-category="breakfast">
+                    <div class="category-header">
+                        <i class="fas fa-coffee"></i>
+                        <h3>الإفطار <span>Breakfast</span></h3>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item">
+                            <div class="item-name">مقلقل <span>Mgalgal</span></div>
+                            <div class="item-variants">
+                                <div class="variant"><span class="v-name">ساندوتش <span>Sandwich</span></span><div class="v-meta"><span class="item-price">7 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 310 سعرة</span></div></div>
+                                <div class="variant"><span class="v-name">صحن <span>Dish</span></span><div class="v-meta"><span class="item-price">14 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 406 سعرة</span></div></div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">شكشوكة <span>Shakshuka</span></div>
+                            <div class="item-variants">
+                                <div class="variant"><span class="v-name">ساندوتش <span>Sandwich</span></span><div class="v-meta"><span class="item-price">5 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 273 سعرة</span></div></div>
+                                <div class="variant"><span class="v-name">صحن <span>Dish</span></span><div class="v-meta"><span class="item-price">10 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 334 سعرة</span></div></div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">دجاج <span>Chicken</span></div>
+                            <div class="item-variants">
+                                <div class="variant"><span class="v-name">ساندوتش <span>Sandwich</span></span><div class="v-meta"><span class="item-price">7 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 296 سعرة</span></div></div>
+                                <div class="variant"><span class="v-name">صحن <span>Dish</span></span><div class="v-meta"><span class="item-price">14 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 481 سعرة</span></div></div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">فول <span>Foul</span></div>
+                            <div class="item-variants">
+                                <div class="variant"><span class="v-name">ساندوتش <span>Sandwich</span></span><div class="v-meta"><span class="item-price">4 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 488 سعرة</span></div></div>
+                                <div class="variant"><span class="v-name">صحن <span>Dish</span></span><div class="v-meta"><span class="item-price">8 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 690 سعرة</span></div></div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">كبدة <span>Liver</span></div>
+                            <div class="item-variants">
+                                <div class="variant"><span class="v-name">ساندوتش <span>Sandwich</span></span><div class="v-meta"><span class="item-price">6 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 240 سعرة</span></div></div>
+                                <div class="variant"><span class="v-name">صحن <span>Dish</span></span><div class="v-meta"><span class="item-price">10 <span>ريال</span></span><span class="item-calories"><i class="fas fa-fire"></i> 234 سعرة</span></div></div>
+                            </div>
+                        </div>
+                        <div class="menu-item"><div class="item-name">ساندوتش وصحن بيض مسلوق <span>Boiled Eggs Sandwich & Dish</span></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش وصحن لحم مفروم <span>Ground Beef Sandwich & Dish</span></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش وصحن هوت دوج <span>Hot Dog Sandwich & Dish</span></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش وصحن مشكل <span>Mix Sandwich & Dish</span></div></div>
+                        <div class="menu-item"><div class="item-name">ساندوتش وصحن بيض مقلي <span>Fried Eggs Sandwich & Dish</span></div></div>
+                    </div>
+                </div>
+
+                <!-- Category: Drinks -->
+                <div class="menu-category" data-category="drinks">
+                    <div class="category-header">
+                        <i class="fas fa-glass-martini-alt"></i>
+                        <h3>العصائر والمشروبات <span>Juices & Drinks</span></h3>
+                    </div>
+                    <div class="items-grid" style="grid-template-columns: 1fr;">
+                        <div class="menu-item full-width">
+                            <div class="item-name"><strong>العصائر الطازجة <span>Fresh Juices</span></strong>
+                                <p class="item-desc">عصائر طبيعية رائعة (الصغير: <strong style="color:var(--primary-blue)">8 ريال</strong> | الكبير: <strong style="color:var(--primary-blue)">12 ريال</strong>)</p>
+                            </div>
+                            
+                            <div class="juice-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                                <div class="juice-card" style="background:#f8f9fa; border:1px solid #f0f0f0; padding:10px; border-radius:8px;">
+                                    <div style="font-weight:700;">ليمون بالنعناع</div>
+                                    <div style="font-size:0.85rem; color:#FF5722; margin-top:5px; font-weight:600;"><i class="fas fa-fire"></i> ص: 197 | ك: 420 سعرة</div>
+                                </div>
+                                <div class="juice-card" style="background:#f8f9fa; border:1px solid #f0f0f0; padding:10px; border-radius:8px;">
+                                    <div style="font-weight:700;">موز بالحليب</div>
+                                    <div style="font-size:0.85rem; color:#FF5722; margin-top:5px; font-weight:600;"><i class="fas fa-fire"></i> ص: 204 | ك: 213 سعرة</div>
+                                </div>
+                                <div class="juice-card" style="background:#f8f9fa; border:1px solid #f0f0f0; padding:10px; border-radius:8px;">
+                                    <div style="font-weight:700;">رمان</div>
+                                    <div style="font-size:0.85rem; color:#FF5722; margin-top:5px; font-weight:600;"><i class="fas fa-fire"></i> ص: 161 | ك: 347 سعرة</div>
+                                </div>
+                                <div class="juice-card" style="background:#f8f9fa; border:1px solid #f0f0f0; padding:10px; border-radius:8px;">
+                                    <div style="font-weight:700;">برتقال</div>
+                                    <div style="font-size:0.85rem; color:#FF5722; margin-top:5px; font-weight:600;"><i class="fas fa-fire"></i> ص: 104 | ك: 200 سعرة</div>
+                                </div>
+                                <div class="juice-card" style="background:#f8f9fa; border:1px solid #f0f0f0; padding:10px; border-radius:8px;">
+                                    <div style="font-weight:700;">كوكتيل</div>
+                                    <div style="font-size:0.85rem; color:#FF5722; margin-top:5px; font-weight:600;"><i class="fas fa-fire"></i> ص: 140 | ك: 255 سعرة</div>
+                                </div>
+                            </div>
+                            
+                            <p class="item-desc mt-3" style="margin-top:10px;">كما تتوفر أصناف أخرى مثل: جوافة، أفوكادو، جزر، شمام، أناناس، مانجو، وغيرها.</p>
+                        </div>
+                        
+                        <div class="menu-item full-width">
+                            <div class="item-name"><strong>المشروبات الغازية <span>Soft Drinks</span></strong>
+                                <p class="item-desc">كوكاكولا، كولا زيرو، سبرايت، فانتا برتقال.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item full-width">
+                            <div class="item-name"><strong>مياه <span>Water</span></strong></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fast banner -->
+    <section class="banner-highlight">
+        <div class="container banner-flex">
+            <div class="banner-text">
+                <h2>الجودة تلتقي بالسرعة</h2>
+                <p>نعد أطباقنا بأجود المكونات الطازجة يومياً لنضمن لكم طعماً لا يُنسى.</p>
+            </div>
+            <div class="banner-action">
+                <a href="tel:920012026" class="btn btn-golden btn-lg"><i class="fas fa-motorcycle"></i> للطلبات: 920012026</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="locations-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">أينما كنت، نحن بقربك | We are near you</span>
+                <h2 class="section-title">فروعنا <span>Our Locations</span></h2>
+                <div class="title-separator"></div>
+            </div>
+
+            <div class="locations-grid">
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع السليمانية <span>Sulaymaniyah</span></h3>
+                        <a href="tel:0114628144" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 462 8144</a>
+                        <a href="tel:0114622195" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 462 2195</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع الرحمانية <span>Rahmaniyah</span></h3>
+                        <a href="tel:0114111992" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 411 1992</a>
+                        <a href="tel:0114708881" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 470 8881</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع الروضة <span>Rawdah</span></h3>
+                        <a href="tel:0112787444" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 278 7444</a>
+                        <a href="tel:0112787555" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 278 7555</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع السويدي <span>Suwaidi</span></h3>
+                        <a href="tel:0112666621" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 266 6621</a>
+                        <a href="tel:0112666623" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 266 6623</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع الندى <span>Nada</span></h3>
+                        <a href="tel:0114355552" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 435 5552</a>
+                        <a href="tel:0114755553" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 475 5553</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع اليرموك <span>Yarmouk</span></h3>
+                        <a href="tel:0112369222" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 236 9222</a>
+                        <a href="tel:0112369333" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 236 9333</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع النسيم <span>Naseem</span></h3>
+                        <a href="tel:0114999962" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 499 9962</a>
+                        <a href="tel:0114999961" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 011 499 9961</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع الدمام <span>Dammam</span></h3>
+                        <a href="tel:0138300905" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 013 830 0905</a>
+                    </div>
+                </div>
+                <!-- Branch -->
+                <div class="branch-card">
+                    <div class="branch-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="branch-info">
+                        <h3>فرع الخبر <span>Khobar</span></h3>
+                        <a href="tel:0138303003" class="phone-link" dir="ltr"><i class="fas fa-phone"></i> 013 830 3003</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>ماما نوره</h2>
+                <p>حبيبة الأولين والتالين</p>
+                <p>MAMA NOURA</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>تواصل معنا <span>Contact Us</span></h3>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-headset"></i></div>
+                    <div class="contact-text">
+                        <span class="label">رقم طلبات الاستلام الموحد</span>
+                        <a href="tel:920012026" class="unified-number" dir="ltr">9200 120 26</a>
+                        <span class="label-en">Unified Pickup Number</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h3>تابعنا <span>Follow Us</span></h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 مطعم ماما نوره. جميع الحقوق محفوظة. | Mama Noura Restaurant &copy; 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Button back to top -->
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
