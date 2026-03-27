@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زاك بروست | طعم البروست الأصلي - المدينة المنورة</title>
+    <meta name="description"
+        content="زاك بروست الخالدية - أفضل بروستد في المدينة المنورة. دجاج طازج يومياً، ثومية حارة مميزة، وخدمة سريعة. مفتوح حتى 4 فجراً.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <span class="logo-icon">🍗</span>
+                <div class="logo-text">
+                    <span class="logo-ar">زاك بروست</span>
+                    <span class="logo-en">ZAAK BROAST</span>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#features">مميزاتنا</a></li>
+                <li><a href="#menu">المنيو</a></li>
+                <li><a href="#reviews">آراء العملاء</a></li>
+                <li><a href="#gallery">معرض الصور</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:0538107275" class="btn btn-primary btn-sm">
+                    <i class="fas fa-phone"></i>
+                    اطلب الآن
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="فتح القائمة">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge animate-on-scroll">
+                    <i class="fas fa-clock"></i>
+                    مفتوح حتى ٤ فجراً
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    طعم البروست
+                    <span class="gradient-text">الأصلي</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    دجاج طازج يومياً · ثومية حارة مميزة · بطاطس بالبهارات
+                </p>
+                <p class="hero-location animate-on-scroll">
+                    <i class="fas fa-map-marker-alt"></i>
+                    حي الخالدية - المدينة المنورة
+                </p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#menu" class="btn btn-primary btn-lg">
+                        <i class="fas fa-utensils"></i>
+                        عرض المنيو
+                    </a>
+                    <a href="tel:0538107275" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone"></i>
+                        اطلب الآن
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="215">0</span>
+                        <span class="stat-label">تقييم</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="stat-label">4.2 على قوقل</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">🏆</span>
+                        <span class="stat-label">دجاج طازج يومياً</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="hero-image-wrapper">
+                    <div class="hero-glow"></div>
+                    <img src="menu/menu_005.jpg" alt="وجبة زاك بروست اللذيذة" class="hero-img">
+                    <div class="floating-badge price-badge">
+                        <span class="price">19</span>
+                        <span class="currency">ر.س</span>
+                    </div>
+                    <div class="floating-badge fresh-badge">
+                        <i class="fas fa-leaf"></i>
+                        طازج يومياً
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 120L60 108C120 96 240 72 360 66C480 60 600 72 720 78C840 84 960 84 1080 78C1200 72 1320 60 1380 54L1440 48V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                    fill="var(--bg-primary)" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">لماذا زاك بروست؟</span>
+                <h2 class="section-title">ما يميزنا عن <span class="gradient-text">الباقي</span></h2>
+                <p class="section-desc">نقدم لكم تجربة بروستد استثنائية بمكونات طازجة وجودة لا تُضاهى</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <h3>دجاج طازج يومياً</h3>
+                    <p>نستخدم فقط الدجاج الطازج المحلي - لا نستخدم المجمد أبداً لضمان أفضل طعم ونكهة</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3>ثومية حارة مميزة</h3>
+                    <p>خلطة الثومية الحارة الخاصة بنا - سر النكهة اللي تخليك ترجع مرة ثانية وثالثة</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>خدمة سريعة</h3>
+                    <p>نقدم طلبك بأسرع وقت ممكن مع الحفاظ على أعلى معايير الجودة والنظافة</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h3>نظافة استثنائية</h3>
+                    <p>نلتزم بأعلى معايير النظافة والسلامة الغذائية في كل خطوة من التحضير</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">قائمتنا المميزة</span>
+                <h2 class="section-title">أطباقنا <span class="gradient-text">الشهية</span></h2>
+                <p class="section-desc">اكتشف تشكيلتنا الواسعة من الأطباق اللذيذة المحضرة بعناية</p>
+            </div>
+
+            <!-- Menu Category Tabs -->
+            <div class="menu-tabs animate-on-scroll">
+                <button class="menu-tab active" data-category="broasted">
+                    <i class="fas fa-drumstick-bite"></i>
+                    بروست
+                </button>
+                <button class="menu-tab" data-category="burgers">
+                    <i class="fas fa-hamburger"></i>
+                    برجر
+                </button>
+                <button class="menu-tab" data-category="sandwiches">
+                    <i class="fas fa-bread-slice"></i>
+                    ساندوتشات
+                </button>
+                <button class="menu-tab" data-category="grilled">
+                    <i class="fas fa-fire"></i>
+                    مشوي
+                </button>
+                <button class="menu-tab" data-category="specials">
+                    <i class="fas fa-star"></i>
+                    عروض خاصة
+                </button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Broasted Items -->
+                <div class="menu-card animate-on-scroll" data-category="broasted">
+                    <div class="menu-card-content">
+                        <div class="menu-card-badge">الأكثر طلباً</div>
+                        <h4>بروست ٤ قطع</h4>
+                        <p>4 قطع دجاج بروستد طازج مع بطاطس وثومية</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">19 <small>ر.س</small></span>
+                            <span class="menu-cal">عادي / حراق</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="broasted">
+                    <div class="menu-card-content">
+                        <h4>بروست جمبري</h4>
+                        <p>جمبري مقرمش مع بطاطس وصلصة خاصة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">24 <small>ر.س</small></span>
+                            <span class="menu-cal">مقرمش ولذيذ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="broasted">
+                    <div class="menu-card-content">
+                        <h4>ستربس دجاج</h4>
+                        <p>شرائح دجاج مقرمشة مع صوص خاص</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">18 <small>ر.س</small></span>
+                            <span class="menu-cal">مقرمش</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="broasted">
+                    <div class="menu-card-content">
+                        <h4>مسحب دجاج</h4>
+                        <p>قطع دجاج ناجتس ذهبية مقرمشة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">18 <small>ر.س</small></span>
+                            <span class="menu-cal">عادي / حراق</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burger Items -->
+                <div class="menu-card animate-on-scroll" data-category="burgers" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>برجر دجاج</h4>
+                        <p>برجر دجاج مقرمش مع خس وطماطم وصوص خاص</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">9 <small>ر.س</small></span>
+                            <span class="menu-cal">لذيذ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="burgers" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>زنجر برجر</h4>
+                        <p>برجر زنجر حار مع خلطة مميزة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">10 <small>ر.س</small></span>
+                            <span class="menu-cal">حار ولذيذ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="burgers" style="display:none;">
+                    <div class="menu-card-content">
+                        <div class="menu-card-badge">وجبة كاملة</div>
+                        <h4>وجبة زاك</h4>
+                        <p>برجر + بطاطس + مشروب بيبسي</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">15 <small>ر.س</small></span>
+                            <span class="menu-cal">وجبة متكاملة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="burgers" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>كريسبي برجر</h4>
+                        <p>برجر دجاج كريسبي مقرمش ولذيذ</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">14 <small>ر.س</small></span>
+                            <span class="menu-cal">كريسبي</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwiches Items -->
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>ساندوتش ناجتس</h4>
+                        <p>ساندوتش ناجتس دجاج عادي أو حراق</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">9 <small>ر.س</small></span>
+                            <span class="menu-cal">عادي / حراق</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>ساندوتش جمبري</h4>
+                        <p>ساندوتش جمبري مقرمش طازج</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">9 <small>ر.س</small></span>
+                            <span class="menu-cal">بحري</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>زنجر ساندوتش</h4>
+                        <p>ساندوتش زنجر حار مع صلصة خاصة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">10 <small>ر.س</small></span>
+                            <span class="menu-cal">حار</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="sandwiches" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>كباب ساندوتش</h4>
+                        <p>ساندوتش كباب لحم أو دجاج</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">9 <small>ر.س</small></span>
+                            <span class="menu-cal">لحم / دجاج</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grilled Items -->
+                <div class="menu-card animate-on-scroll" data-category="grilled" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>ساندوتش كودو</h4>
+                        <p>ساندوتش كودو مشوي مع خضار طازجة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">10 <small>ر.س</small></span>
+                            <span class="menu-cal">مشوي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="grilled" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>ساندوتش مكسيكو</h4>
+                        <p>ساندوتش مكسيكي حار مع صلصة مميزة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">13 <small>ر.س</small></span>
+                            <span class="menu-cal">مكسيكي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="grilled" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>بي بي كو دجاج</h4>
+                        <p>دجاج مشوي بصلصة البي بي كيو</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">13 <small>ر.س</small></span>
+                            <span class="menu-cal">مشوي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="grilled" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>وجبة كودو</h4>
+                        <p>ساندوتش كودو + بطاطس + مشروب</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">16 <small>ر.س</small></span>
+                            <span class="menu-cal">وجبة كاملة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specials -->
+                <div class="menu-card animate-on-scroll" data-category="specials" style="display:none;">
+                    <div class="menu-card-content">
+                        <div class="menu-card-badge special-badge">عرض عائلي</div>
+                        <h4>بروست عائلة</h4>
+                        <p>12 قطعة بروست + حمص + بطاطس + بيبسي لتر</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">60 <small>ر.س</small></span>
+                            <span class="menu-cal">عائلي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="specials" style="display:none;">
+                    <div class="menu-card-content">
+                        <div class="menu-card-badge special-badge">الأفضل مبيعاً</div>
+                        <h4>زاك سبيشل</h4>
+                        <p>4 بروست + 4 جمبري + 4 ناجتس + 3 ستربس + 4 جبنة + حمص + بطاطس + بيبسي</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">65 <small>ر.س</small></span>
+                            <span class="menu-cal">سبيشل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="specials" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>زاك فرايز</h4>
+                        <p>بطاطس مقرمشة مع دجاج وصلصة خاصة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">20 <small>ر.س</small></span>
+                            <span class="menu-cal">مميز</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card animate-on-scroll" data-category="specials" style="display:none;">
+                    <div class="menu-card-content">
+                        <h4>بوب كورن زاك</h4>
+                        <p>قطع دجاج بوب كورن مقرمشة ولذيذة</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">15 <small>ر.س</small></span>
+                            <span class="menu-cal">سناك</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Menu CTA -->
+            <div class="menu-cta animate-on-scroll">
+                <p>شاهد قائمتنا الكاملة مع جميع الأصناف والأسعار</p>
+                <a href="#" class="btn btn-primary btn-lg" id="viewFullMenu">
+                    <i class="fas fa-book-open"></i>
+                    عرض المنيو الكامل
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Lightbox -->
+    <div class="menu-lightbox" id="menuLightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-right"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-left"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="المنيو" id="lightboxImg">
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">آراء عملائنا</span>
+                <h2 class="section-title">ماذا يقول <span class="gradient-text">عملاؤنا</span></h2>
+                <div class="reviews-summary">
+                    <div class="reviews-rating">
+                        <span class="rating-number">4.2</span>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">215 تقييم على Google</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card animate-on-scroll" data-delay="0">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">ف</div>
+                        <div class="reviewer-info">
+                            <h4>Fяσzεи</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_42x16dp.png"
+                            alt="Google" class="google-logo">
+                    </div>
+                    <p class="review-text">أكلهم ماشاء الله تبارك الرحمن يجنن والثومية الحارة مرة لذيذة، صدق بروست على
+                        أصوله ✨👌</p>
+                    <span class="review-date">قبل شهرين</span>
+                </div>
+                <div class="review-card animate-on-scroll" data-delay="100">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">خ</div>
+                        <div class="reviewer-info">
+                            <h4>khalid kalumian</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_42x16dp.png"
+                            alt="Google" class="google-logo">
+                    </div>
+                    <p class="review-text">بصراحة زاك بروست جربته في حائل وفي المدينة حي الخالدية روعة، طعم ولذة وكل شي
+                        حلو، الله يبارك فيهم وفي رزقهم 🤩</p>
+                    <span class="review-date">قبل 4 أشهر</span>
+                </div>
+                <div class="review-card animate-on-scroll" data-delay="200">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">ع</div>
+                        <div class="reviewer-info">
+                            <h4>Alaa1235</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_42x16dp.png"
+                            alt="Google" class="google-logo">
+                    </div>
+                    <p class="review-text">أفضل وجبة بروست في الخالدية! نظافة وطعم والبطاطس بالبهارات حاجه تانيه 🔥
+                        العمال جداً متعاونين والقمة في الأدب والأخلاق</p>
+                    <span class="review-date">قبل 5 أشهر</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">معرض الصور</span>
+                <h2 class="section-title">لقطات من <span class="gradient-text">مطعمنا</span></h2>
+            </div>
+            <div class="gallery-grid animate-on-scroll">
+                <div class="gallery-item gallery-large">
+                    <img src="photos/photo_037.jpg" alt="واجهة مطعم زاك بروست">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>واجهة المطعم</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="menu/menu_005.jpg" alt="وجبة بروست">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>وجبة بروست</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="menu/menu_006.jpg" alt="بروست طازج">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>بروست طازج</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-wide">
+                    <img src="menu/menu_001.jpg" alt="قائمة الطعام">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>قائمة الطعام</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="menu/menu_002.jpg" alt="عروض زاك الطازج">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>عروض زاك الطازج</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Banner -->
+    <section class="services-banner">
+        <div class="container">
+            <div class="services-grid animate-on-scroll">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-chair"></i></div>
+                    <h4>أكل داخل المكان</h4>
+                    <p>استمتع بتجربة طعام مريحة</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h4>طعام سفري</h4>
+                    <p>خذ طلبك وأنت ماشي</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
+                    <h4>توصيل بدون تلامس</h4>
+                    <p>توصيل آمن لباب بيتك</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-moon"></i></div>
+                    <h4>مفتوح للفجر</h4>
+                    <p>نخدمك حتى ٤ فجراً يومياً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">تواصل معنا</span>
+                <h2 class="section-title">زورنا أو <span class="gradient-text">تواصل معنا</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p>طريق الإسكان، حي الخالدية<br>المدينة المنورة 41311</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <a href="tel:0538107275">0538107275</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>ساعات العمل</h4>
+                            <p>يومياً: ١:٠٠م – ٤:٠٠ص</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-star"></i></div>
+                        <div>
+                            <h4>التقييم</h4>
+                            <p>4.2 ⭐ (215 تقييم على Google Maps)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map animate-on-scroll">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.5!2d39.6585236!3d24.4508524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bd958916ccce11%3A0xda7015573991cd9!2z2LLYp9mDINio2LHZiNiz2Kog2KfZhNiu2KfZhNiv2YrYqQ!5e0!3m2!1sar!2ssa!4v1711200000000"
+                        width="100%" height="100%" style="border:0; border-radius: 20px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍗</span>
+                        <div class="logo-text">
+                            <span class="logo-ar">زاك بروست</span>
+                            <span class="logo-en">ZAAK BROAST</span>
+                        </div>
+                    </div>
+                    <p>طعم البروست الأصلي في المدينة المنورة. دجاج طازج يومياً مع أفضل التوابل والخلطات الخاصة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero">الرئيسية</a></li>
+                        <li><a href="#menu">المنيو</a></li>
+                        <li><a href="#reviews">التقييمات</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>ساعات العمل</h4>
+                    <ul>
+                        <li><span>يومياً</span><span>١:٠٠م – ٤:٠٠ص</span></li>
+                    </ul>
+                    <div class="footer-phone">
+                        <a href="tel:0538107275" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            0538107275
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 زاك بروست الخالدية. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp / Call Button -->
+    <a href="tel:0538107275" class="floating-cta" aria-label="اتصل بنا">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
