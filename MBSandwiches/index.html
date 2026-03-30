@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ام بي ساندوتش | MB Sandwiches - المدينة المنورة</title>
+    <meta name="description"
+        content="مطعم ام بي ساندوتش في المدينة المنورة - أفضل برجر واجيو وسماش برجر ودجاج مقرمش. السر في اللقمة!">
+
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">
+                <span class="brand-text" dir="ltr">
+                    <span class="text-accent">MB</span> <span class="text-white">Sandwiches</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero"><i class="fas fa-home me-1"></i>الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i>من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu"><i class="fas fa-utensils me-1"></i>المنيو</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery"><i class="fas fa-images me-1"></i>معرض الصور</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews"><i class="fas fa-star me-1"></i>التقييمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-map-location-dot me-1"></i>تواصل معنا</a></li>
+                </ul>
+                <!-- Desktop button -->
+                <a href="tel:0568929227" class="btn btn-accent btn-sm rounded-pill px-4 d-none d-lg-inline-flex align-items-center gap-1">
+                    <i class="fas fa-phone"></i> اطلب الآن
+                </a>
+                <!-- Mobile call button inside menu -->
+                <div class="d-lg-none mt-3 pt-3 border-top border-white border-opacity-10">
+                    <a href="tel:0568929227" class="btn btn-accent w-100 rounded-pill py-2 fw-bold">
+                        <i class="fas fa-phone-volume me-2"></i> اتصل بنا الآن — الخط الساخن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center min-vh-100 justify-content-center">
+                <div class="col-lg-9 text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-badge mb-3">
+                        <i class="fas fa-award"></i> أفضل مطعم وجبات سريعة في المدينة المنورة
+                    </div>
+                    <h1 class="hero-title fw-bold mb-4">
+                        السر في <span class="text-accent">اللقمة</span>
+                    </h1>
+                    <p class="hero-desc lead mb-5 mx-auto" style="max-width: 700px;">
+                        نقدم لكم أجود أنواع لحم الواجيو الطازج والدجاج المقرمش بتتبيلة MB السرية. تجربة طعم لا تُنسى!
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap hero-buttons-wrap">
+                        <a href="#menu" class="btn btn-accent btn-lg rounded-pill px-5 py-3">
+                            <i class="fas fa-utensils me-2"></i> تصفح المنيو
+                        </a>
+                        <a href="tel:0568929227" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">
+                            <i class="fas fa-phone-volume me-2"></i> الخط الساخن <span dir="ltr" class="ms-1">0568929227</span>
+                        </a>
+                    </div>
+
+                    <!-- Centered Stats -->
+                    <div class="hero-stats-box mt-5 pt-4 pb-3 px-4 mx-auto rounded-4">
+                        <div class="row g-3 justify-content-center align-items-center">
+                            <div class="col-4 stat-col">
+                                <div class="stat-item text-center">
+                                    <h3 class="text-accent fw-bold mb-0 counter" data-target="4.9">0</h3>
+                                    <small class="text-white-50"><i class="fas fa-star text-accent"></i> التقييم</small>
+                                </div>
+                            </div>
+                            <div class="col-4 stat-col border-start border-end border-white border-opacity-10">
+                                <div class="stat-item text-center">
+                                    <h3 class="text-accent fw-bold mb-0 counter" data-target="143">0</h3>
+                                    <small class="text-white-50">تقييم</small>
+                                </div>
+                            </div>
+                            <div class="col-4 stat-col">
+                                <div class="stat-item text-center">
+                                    <h3 class="text-accent fw-bold mb-0">5 <i class="fas fa-star" style="font-size:0.7em"></i></h3>
+                                    <small class="text-white-50">كل التقييمات</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Animated particles -->
+        <div class="hero-particles" id="particles"></div>
+    </section>
+
+    <!-- About / Services -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-left">
+                    <div class="about-img-grid">
+                        <img src="photos/photo_001.jpg" alt="MB Food" class="about-img-main rounded-4 shadow-lg">
+                        <div class="about-img-badge text-logo">
+                            <span class="text-accent">MB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="section-label"><i class="fas fa-info-circle"></i> من نحن</span>
+                    <h2 class="section-title mb-4">مطعم <span class="text-accent">MB Sandwiches</span></h2>
+                    <p class="text-white-50 fs-5 mb-4">
+                        ام بي ساندوتش - مطعم وجبات سريعة في قلب المدينة المنورة. نستخدم أجود أنواع لحم الواجيو والدجاج
+                        الطازج مع خلطتنا السرية. يقولون "الإدمان يبدأ من هنا" 🍔💜
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="service-card">
+                                <i class="fas fa-utensils text-accent mb-2 fs-4"></i>
+                                <h6>أكل داخل المطعم</h6>
+                                <small class="text-white-50">أجواء مميزة ومريحة</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-card">
+                                <i class="fas fa-car text-accent mb-2 fs-4"></i>
+                                <h6>طلب أثناء القيادة</h6>
+                                <small class="text-white-50">Drive-Through</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-card">
+                                <i class="fas fa-box text-accent mb-2 fs-4"></i>
+                                <h6>تسليم بدون تلامس</h6>
+                                <small class="text-white-50">Contactless Delivery</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="service-card">
+                                <i class="fas fa-clock text-accent mb-2 fs-4"></i>
+                                <h6>أوقات العمل</h6>
+                                <small class="text-white-50">٤:٠٠م - ٤:٠٠ص يومياً</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label"><i class="fas fa-book-open"></i> قائمة الطعام</span>
+                <h2 class="section-title">اكتشف <span class="text-accent">منيو MB</span></h2>
+                <p class="text-white-50">اختر ما يروق لك من مجموعتنا الشهية</p>
+            </div>
+
+            <!-- Menu Filter Tabs -->
+            <ul class="nav nav-pills menu-pills justify-content-center mb-5 flex-wrap gap-2" data-aos="fade-up"
+                data-aos-delay="100">
+                <li class="nav-item">
+                    <button class="nav-link active rounded-pill" data-filter="beef"><i class="fas fa-burger me-1"></i>
+                        برجر اللحم</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill" data-filter="chicken"><i
+                            class="fas fa-drumstick-bite me-1"></i> برجر الدجاج</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill" data-filter="sides"><i class="fas fa-french-fries me-1"></i>
+                        أصناف جانبية</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill" data-filter="sauces"><i class="fas fa-jar me-1"></i>
+                        صوصات</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill" data-filter="desserts"><i class="fas fa-ice-cream me-1"></i>
+                        حلويات ومشروبات</button>
+                </li>
+            </ul>
+
+            <!-- Beef Burgers -->
+            <div class="menu-category active" id="cat-beef">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="menu-card">
+                            <div class="menu-card-badge">الأكثر طلباً</div>
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">واجيو تشيز برجر</h5>
+                                <span class="menu-card-en">Double Wagyu Cheese Burger</span>
+                                <p class="menu-card-desc">شريحتين لحم واجيو عالي الجودة مع جبنة ذائبة وصوص MB الخاص</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">25 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 482 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">ترافل واجيو برجر</h5>
+                                <span class="menu-card-en">Double Truffle Wagyu Burger</span>
+                                <p class="menu-card-desc">لحم واجيو فاخر مع صوص الترافل الإيطالي الأصلي</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">27 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 494 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-card featured">
+                            <div class="menu-card-badge">⭐ مميز</div>
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">سموكي دبل سماش برجر</h5>
+                                <span class="menu-card-en">Smokey Double Smash Burger</span>
+                                <p class="menu-card-desc">برجر سماش مدخن مزدوج مع الخلطة السرية والصوص المدخن</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">32 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 612 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">تشوبد تشيز ستيك</h5>
+                                <span class="menu-card-en">Chopped Cheesesteak</span>
+                                <p class="menu-card-desc">ستيك مقطع طازج مع جبنة ذائبة على خبز محمص</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">32 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 432 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Extras -->
+                <div class="extras-banner mt-4" data-aos="fade-up">
+                    <h6 class="text-accent mb-2"><i class="fas fa-plus-circle"></i> الإضافات</h6>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <span class="extra-tag">+ بصل مكرمل <strong>2 ر.س</strong></span>
+                        <span class="extra-tag">+ شريحة لحم <strong>6 ر.س</strong></span>
+                        <span class="extra-tag">+ دبل شيز <strong>2 ر.س</strong></span>
+                        <span class="extra-tag">+ بيف بيكون <strong>5 ر.س</strong></span>
+                        <span class="extra-tag">+ كرواسان <strong>5 ر.س</strong></span>
+                        <span class="extra-tag">+ بطاطس <strong>6 ر.س</strong></span>
+                        <span class="extra-tag">+ مشروب غازي <strong>3 ر.س</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chicken Burgers -->
+            <div class="menu-category" id="cat-chicken">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">كرانشي تشكن سيزر</h5>
+                                <span class="menu-card-en">Crunchy Chicken Caesar</span>
+                                <p class="menu-card-desc">دجاج مقرمش مع صوص السيزر الكريمي الطازج</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">22 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 530 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-card featured">
+                            <div class="menu-card-badge">⭐ مميز</div>
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">كرنشي ميبل برجر</h5>
+                                <span class="menu-card-en">Crunchy Maple Burger</span>
+                                <p class="menu-card-desc">دجاج مقرمش بصوص الميبل الحلو والحار المميز</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">24 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 515 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">دجاج مشوي مع البيكون المكرمل</h5>
+                                <span class="menu-card-en">Grilled Chicken with Caramelized Bacon</span>
+                                <p class="menu-card-desc">دجاج مشوي طازج مع شرائح البيكون المكرمل</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">28 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 465 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">برجر دجاج مشوي ايطاليانو</h5>
+                                <span class="menu-card-en">Grilled Chicken Burger with Italian Vegetables</span>
+                                <p class="menu-card-desc">دجاج مشوي مع خضار إيطالية طازجة ومشوية</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">29 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 452 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="extras-banner mt-4" data-aos="fade-up">
+                    <h6 class="text-accent mb-2"><i class="fas fa-plus-circle"></i> الإضافات</h6>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <span class="extra-tag">+ بصل مكرمل <strong>2 ر.س</strong></span>
+                        <span class="extra-tag">+ مشروب غازي <strong>3 ر.س</strong></span>
+                        <span class="extra-tag">+ بيف بيكون <strong>5 ر.س</strong></span>
+                        <span class="extra-tag">+ بطاطس <strong>6 ر.س</strong></span>
+                        <span class="extra-tag">+ دبل شيز <strong>2 ر.س</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Dishes -->
+            <div class="menu-category" id="cat-sides">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">دجاج ستريبس</h5>
+                                <span class="menu-card-en">Chicken Strips</span>
+                                <p class="menu-card-desc">شرائح دجاج مقرمشة مقلية بتتبيلة خاصة</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">19 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 421 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">دجاج ميبل ستريبس</h5>
+                                <span class="menu-card-en">Chicken Maple Strips</span>
+                                <p class="menu-card-desc">شرائح دجاج مقرمشة مع صوص الميبل الحلو</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">19 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 456 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">أصابع البطاطس المقلية</h5>
+                                <span class="menu-card-en">French Fries Sticks</span>
+                                <p class="menu-card-desc">بطاطس مقلية مقرمشة ذهبية</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <span class="menu-price">6 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 425 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sauces -->
+            <div class="menu-category" id="cat-sauces">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                        <div class="menu-card sauce-card">
+                            <div class="menu-card-body text-center">
+                                <i class="fas fa-droplet text-accent fs-1 mb-3"></i>
+                                <h5 class="menu-card-title">صوص MB</h5>
+                                <span class="menu-card-en">MB Sauce</span>
+                                <div class="mt-3"><span class="menu-price">3 <small>ر.س</small></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-card sauce-card">
+                            <div class="menu-card-body text-center">
+                                <i class="fas fa-pepper-hot text-accent fs-1 mb-3"></i>
+                                <h5 class="menu-card-title">ميبل سيراتشا صوص</h5>
+                                <span class="menu-card-en">Maple Sriracha Sauce</span>
+                                <div class="mt-3"><span class="menu-price">3 <small>ر.س</small></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-card sauce-card">
+                            <div class="menu-card-body text-center">
+                                <i class="fas fa-diamond text-accent fs-1 mb-3"></i>
+                                <h5 class="menu-card-title">ترافل صوص</h5>
+                                <span class="menu-card-en">Truffle Sauce</span>
+                                <div class="mt-3"><span class="menu-price">3 <small>ر.س</small></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="menu-card sauce-card">
+                            <div class="menu-card-body text-center">
+                                <i class="fas fa-leaf text-accent fs-1 mb-3"></i>
+                                <h5 class="menu-card-title">بيستو صوص</h5>
+                                <span class="menu-card-en">Pesto Sauce</span>
+                                <div class="mt-3"><span class="menu-price">3 <small>ر.س</small></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts & Drinks -->
+            <div class="menu-category" id="cat-desserts">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">آيس كريم ياباني (موتشي)</h5>
+                                <span class="menu-card-en">Japanese Ice Cream (Mochi)</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="menu-price">9 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 462 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">تيراميسو</h5>
+                                <span class="menu-card-en">Tiramisu</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="menu-price">20 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 462 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">بورليه</h5>
+                                <span class="menu-card-en">Creme Brulee</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="menu-price">20 <small>ر.س</small></span>
+                                    <span class="menu-cal"><i class="fas fa-fire-flame-curved"></i> 482 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">مشروبات غازية كنزا كولا</h5>
+                                <span class="menu-card-en">Kinza Cola</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="menu-price">3 <small>ر.س</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">مشروبات غازية كنزا كولا دايت</h5>
+                                <span class="menu-card-en">Kinza Cola Diet</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="menu-price">3 <small>ر.س</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-card">
+                            <div class="menu-card-body">
+                                <h5 class="menu-card-title">مياه معدنية</h5>
+                                <span class="menu-card-en">Water</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="menu-price">1 <small>ر.س</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label"><i class="fas fa-images"></i> معرض الصور</span>
+                <h2 class="section-title">لقطات من <span class="text-accent">عالم MB</span></h2>
+            </div>
+            <div class="row g-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="photos/photo_001.jpg" alt="MB Chicken Strips" class="img-fluid rounded-4">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="photos/photo_010.jpg" alt="MB Burger" class="img-fluid rounded-4">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="menu/menu (1).jpeg" alt="MB Hours" class="img-fluid rounded-4">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label"><i class="fas fa-star"></i> التقييمات</span>
+                <h2 class="section-title">ماذا قال <span class="text-accent">عملاؤنا</span></h2>
+                <p class="text-white-50">تقييم 4.9 من أصل 5 — أكثر من 143 تقييم على Google</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="review-card h-100">
+                        <div class="review-stars mb-3">★★★★★</div>
+                        <p class="review-text">"صراحة المطعم من افضل المطاعم الي اكلتها. طعمه لذيذ جدا ومشبع وفوق
+                            التوقعات وحتى الاكل تحسه فريش. تعامل موظفين ما شاء الله مرة زين. يستحق التجربة!"</p>
+                        <div class="review-author mt-auto">
+                            <div class="review-avatar">H</div>
+                            <div>
+                                <strong>Hartz</strong>
+                                <small class="d-block text-white-50">قبل أسبوعين</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-card h-100">
+                        <div class="review-stars mb-3">★★★★★</div>
+                        <p class="review-text">"اخذت سماش برجر لحم مدخن مع بيكن وبصل مكرمل، فعلا طلع لذيذ. تعامله جداً
+                            ممتاز ومحترم. لو في تقييم اكثر من ٥ قیّمت!"</p>
+                        <div class="review-author mt-auto">
+                            <div class="review-avatar">م</div>
+                            <div>
+                                <strong>منار القثمي</strong>
+                                <small class="d-block text-white-50">قبل 4 أسابيع</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-card h-100">
+                        <div class="review-stars mb-3">★★★★★</div>
+                        <p class="review-text">"وربي طعم وجودة ونظافة ماشاء الله. اتمنى يكون لهم فروع. اللي ماجربهم فاته
+                            الكثير! وشكرا للموظف بصير اخلاق وتسويق فنان."</p>
+                        <div class="review-author mt-auto">
+                            <div class="review-avatar">J</div>
+                            <div>
+                                <strong>Jojo W69</strong>
+                                <small class="d-block text-white-50">مرشد محلي · قبل 3 أسابيع</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="review-card h-100">
+                        <div class="review-stars mb-3">★★★★★</div>
+                        <p class="review-text">"مطعم رائع بكل معنى الكلمة. الأكل لذيذ، النكهات متوازنة، الخدمة سريعة
+                            وممتازة، والموظفون في غاية اللطف. تجربة مميزة تستحق التكرار!"</p>
+                        <div class="review-author mt-auto">
+                            <div class="review-avatar">R</div>
+                            <div>
+                                <strong>Reem Aljehani</strong>
+                                <small class="d-block text-white-50">قبل شهر</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-card h-100">
+                        <div class="review-stars mb-3">★★★★★</div>
+                        <p class="review-text">"الاكل مره لذيذ عجبني مره وبرجر ايطاليانو مررره لذيذ. الموظفين مره
+                            محترمين حبيت!"</p>
+                        <div class="review-author mt-auto">
+                            <div class="review-avatar">F</div>
+                            <div>
+                                <strong>F</strong>
+                                <small class="d-block text-white-50">قبل شهر</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-card h-100">
+                        <div class="review-stars mb-3">★★★★★</div>
+                        <p class="review-text">"ماشاء الله عليهم لذييذ. مو من سكان المدينة لكن ان شاء الله أرجع لهم مره
+                            ثانيه.. 💛"</p>
+                        <div class="review-author mt-auto">
+                            <div class="review-avatar">M</div>
+                            <div>
+                                <strong>Mohammed</strong>
+                                <small class="d-block text-white-50">قبل 3 أسابيع</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label"><i class="fas fa-map-location-dot"></i> تواصل معنا</span>
+                <h2 class="section-title">زرنا في <span class="text-accent">المدينة المنورة</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="contact-card h-100">
+                        <div class="contact-icon mb-4"><i class="fas fa-location-dot"></i></div>
+                        <h4 class="mb-3">العنوان</h4>
+                        <p class="text-white-50 mb-4">ابراهيم ابن عبدالله العنقري، الحديقة، المدينة المنورة 42383</p>
+
+                        <div class="contact-icon mb-4"><i class="fas fa-clock"></i></div>
+                        <h4 class="mb-3">أوقات العمل</h4>
+                        <p class="text-white-50 mb-4">يومياً من ٤:٠٠ مساءً حتى ٤:٠٠ صباحاً</p>
+
+                        <div class="contact-icon mb-4"><i class="fas fa-tag"></i></div>
+                        <h4 class="mb-3">التصنيف</h4>
+                        <p class="text-white-50 mb-4">مطعم وجبات سريعة</p>
+
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="https://www.google.com/maps/place/%D8%A7%D9%85+%D8%A8%D9%8A+%D8%B3%D8%A7%D9%86%D8%AF%D9%88%D8%AA%D8%B4+MB+Sandwiches"
+                                target="_blank" class="btn btn-accent rounded-pill px-4">
+                                <i class="fab fa-google me-2"></i> خرائط جوجل
+                            </a>
+                            <a href="https://linktr.ee/qr/e32515b0-f3dd-47c8-8c0b-3dd099bb76e6" target="_blank"
+                                class="btn btn-outline-light rounded-pill px-4">
+                                <i class="fas fa-link me-2"></i> اطلب الآن
+                            </a>
+                        </div>
+                        
+                        <div class="mt-4 pt-3 border-top border-white border-opacity-10 d-flex gap-3 align-items-center">
+                            <span class="text-white-50 small">حسابات التواصل:</span>
+                            <a href="https://www.tiktok.com/@mb.sandwichs" target="_blank" class="social-link"><i
+                                    class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/mb.sandwichs/" target="_blank" class="social-link"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="map-wrapper rounded-4 overflow-hidden shadow-lg h-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.1!2d39.6061589!3d24.4263284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdc1ff224c86c1%3A0xba33251ec8afb4d8!2z2KfZhSDYqNmKINiz2KfZhtiv2YjYqti0IE1CIFNhbmR3aWNoZXM!5e0!3m2!1sar!2ssa!4v1"
+                            width="100%" height="100%" style="border:0;min-height:450px;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <span class="brand-text fs-5"><span class="text-accent">MB</span> Sandwiches</span>
+                    <br><small class="text-white-50">جميع الحقوق محفوظة &copy; 2026</small>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <div class="footer-social">
+                        <a href="https://www.tiktok.com/@mb.sandwichs" target="_blank" class="social-link"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/mb.sandwichs/" target="_blank" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="tel:0568929227" class="social-link"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <span class="text-white-50">المدينة المنورة 💜</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
