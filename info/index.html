@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم الشرق - أصالة المذاق</title>
+
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        :root {
+            --primary: #c8a97e;
+            --primary-dark: #b8964a;
+            --dark: #1a1a2e;
+            --darker: #16213e;
+            --darkest: #0f0f1a;
+            --light: #f5f5f5;
+            --gold: #d4a745;
+            --red: #e74c3c;
+            --white: #ffffff;
+            --gray: #6c757d;
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--darkest);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--darkest);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            background: transparent !important;
+            padding: 20px 0;
+            transition: var(--transition);
+            z-index: 9999;
+        }
+
+        .navbar.scrolled {
+            background: rgba(15, 15, 26, 0.95) !important;
+            backdrop-filter: blur(20px);
+            padding: 10px 0;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--primary) !important;
+            text-shadow: 0 0 20px rgba(200, 169, 126, 0.3);
+        }
+
+        .navbar-brand i {
+            color: var(--gold);
+            margin-left: 8px;
+        }
+
+        .nav-link {
+            color: var(--white) !important;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 0 5px;
+            padding: 8px 18px !important;
+            border-radius: 25px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary) !important;
+            background: rgba(200, 169, 126, 0.1);
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            color: var(--dark) !important;
+            font-weight: 700;
+            border-radius: 25px;
+            padding: 10px 25px !important;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(200, 169, 126, 0.4);
+            color: var(--dark) !important;
+            background: linear-gradient(135deg, var(--gold), var(--primary));
+        }
+
+        .navbar-toggler {
+            border: 2px solid var(--primary);
+            padding: 8px 12px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(200, 169, 126, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(15, 15, 26, 0.7), rgba(26, 26, 46, 0.8)),
+                url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 30% 50%, rgba(200, 169, 126, 0.08) 0%, transparent 70%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(200, 169, 126, 0.15);
+            border: 1px solid rgba(200, 169, 126, 0.3);
+            color: var(--primary);
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin-bottom: 35px;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .hero-buttons {
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            color: var(--dark);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(200, 169, 126, 0.4);
+            color: var(--dark);
+        }
+
+        .btn-outline-custom {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 13px 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+            background: transparent;
+        }
+
+        .btn-outline-custom:hover {
+            background: var(--primary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            color: var(--white);
+        }
+
+        .hero-stats {
+            margin-top: 60px;
+            animation: fadeInUp 1s ease 0.8s both;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0 20px;
+            border-left: 1px solid rgba(200, 169, 126, 0.2);
+        }
+
+        .stat-item:last-child {
+            border-left: none;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Floating elements */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(200, 169, 126, 0.1), transparent);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .float-1 {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            right: -100px;
+            animation-delay: 0s;
+        }
+
+        .float-2 {
+            width: 200px;
+            height: 200px;
+            bottom: 20%;
+            left: 5%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        /* ===== SECTION STYLING ===== */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-subtitle {
+            color: var(--primary);
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-line {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        .section-desc {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== FEATURED DISHES ===== */
+        .featured {
+            background: var(--dark);
+        }
+
+        .dish-card {
+            background: var(--darker);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(200, 169, 126, 0.1);
+            height: 100%;
+        }
+
+        .dish-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(200, 169, 126, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .dish-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .dish-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .dish-card:hover .dish-img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        .dish-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, var(--red), #c0392b);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .dish-rating {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            color: var(--gold);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .dish-content {
+            padding: 25px;
+        }
+
+        .dish-content h4 {
+            font-weight: 800;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .dish-content p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .dish-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dish-price {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary);
+        }
+
+        .dish-price small {
+            font-size: 0.8rem;
+            color: var(--gray);
+            font-weight: 400;
+        }
+
+        .btn-add-cart {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            border: none;
+            color: var(--dark);
+            font-size: 1.2rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-add-cart:hover {
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 0 5px 15px rgba(200, 169, 126, 0.4);
+        }
+
+        /* ===== MENU SECTION ===== */
+        .menu-section {
+            background: var(--darkest);
+        }
+
+        .menu-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 50px;
+        }
+
+        .menu-tab {
+            background: rgba(200, 169, 126, 0.1);
+            border: 1px solid rgba(200, 169, 126, 0.2);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .menu-tab:hover,
+        .menu-tab.active {
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            color: var(--dark);
+            border-color: transparent;
+        }
+
+        .menu-tab i {
+            margin-left: 8px;
+        }
+
+        .menu-item {
+            background: var(--dark);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .menu-item:hover {
+            border-color: rgba(200, 169, 126, 0.2);
+            transform: translateX(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .menu-item-info {
+            flex: 1;
+        }
+
+        .menu-item-info h5 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .menu-item-info p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .menu-item-dots {
+            flex: 1;
+            border-bottom: 2px dotted rgba(200, 169, 126, 0.3);
+            margin: 0 10px;
+            min-width: 30px;
+        }
+
+        .menu-item-price {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery {
+            background: var(--dark);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .gallery-overlay span {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background: var(--darkest);
+            overflow: hidden;
+        }
+
+        .testimonial-card {
+            background: var(--dark);
+            border-radius: 20px;
+            padding: 35px;
+            margin: 15px;
+            border: 1px solid rgba(200, 169, 126, 0.1);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(200, 169, 126, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 5rem;
+            color: rgba(200, 169, 126, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 2px;
+        }
+
+        .testimonial-role {
+            color: var(--primary);
+            font-size: 0.85rem;
+        }
+
+        .testimonial-slider-controls {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .slider-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .slider-btn:hover {
+            background: var(--primary);
+            color: var(--dark);
+        }
+
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(200, 169, 126, 0.3);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .slider-dot.active {
+            background: var(--primary);
+            width: 30px;
+            border-radius: 10px;
+        }
+
+        /* ===== CONTACT & MAP ===== */
+        .contact {
+            background: var(--dark);
+        }
+
+        .contact-card {
+            background: var(--darker);
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(200, 169, 126, 0.1);
+            height: 100%;
+        }
+
+        .contact-card:hover {
+            border-color: rgba(200, 169, 126, 0.3);
+            transform: translateY(-8px);
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(200, 169, 126, 0.2), rgba(212, 167, 69, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .contact-card h5 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.6);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .contact-card a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-card a:hover {
+            color: var(--gold);
+        }
+
+        .map-wrapper {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid rgba(200, 169, 126, 0.2);
+            height: 400px;
+            margin-top: 50px;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(80%) contrast(1.1);
+            transition: var(--transition);
+        }
+
+        .map-wrapper:hover iframe {
+            filter: grayscale(0%) contrast(1);
+        }
+
+        .contact-form {
+            background: var(--darker);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(200, 169, 126, 0.1);
+        }
+
+        .form-floating .form-control,
+        .form-floating .form-select {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(200, 169, 126, 0.2);
+            color: var(--white);
+            border-radius: 12px;
+            padding: 15px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .form-floating .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(200, 169, 126, 0.1);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .form-floating label {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .form-floating .form-control:focus~label,
+        .form-floating .form-control:not(:placeholder-shown)~label {
+            color: var(--primary);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--darkest);
+            padding: 60px 0 0;
+            border-top: 1px solid rgba(200, 169, 126, 0.1);
+        }
+
+        .footer-brand {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .footer-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-right: 5px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(200, 169, 126, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.1rem;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-hours li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(200, 169, 126, 0.1);
+            padding: 20px 0;
+            margin-top: 40px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.9rem;
+        }
+
+        /* ===== SCROLL TO TOP ===== */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            color: var(--dark);
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            box-shadow: 0 5px 20px rgba(200, 169, 126, 0.4);
+        }
+
+        .scroll-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ===== LIGHTBOX ===== */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 99999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-overlay.active {
+            display: flex;
+        }
+
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(200, 169, 126, 0.2);
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            background: var(--primary);
+            color: var(--dark);
+        }
+
+        /* ===== PRELOADER ===== */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--darkest);
+            z-index: 999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: opacity 0.5s ease;
+        }
+
+        .preloader.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .preloader-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(200, 169, 126, 0.1);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .preloader-text {
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 991px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 200px);
+            }
+
+            .gallery-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .stat-item {
+                margin-bottom: 15px;
+            }
+
+            .navbar-collapse {
+                background: rgba(15, 15, 26, 0.98);
+                padding: 20px;
+                border-radius: 15px;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-badge {
+                margin-bottom: 25px;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .hero-buttons .btn-primary-custom,
+            .hero-buttons .btn-outline-custom {
+                width: 80%;
+                max-width: 280px;
+                text-align: center;
+            }
+
+            .hero-buttons .btn-primary-custom {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            .hero-stats .stat-item {
+                border-left: none;
+                border-bottom: 1px solid rgba(200, 169, 126, 0.2);
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .gallery-item:nth-child(1) {
+                grid-column: span 1;
+            }
+
+            .gallery-item {
+                height: 200px;
+            }
+
+            .menu-item {
+                flex-wrap: wrap;
+            }
+
+            .menu-item-dots {
+                display: none;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+        }
+
+        /* ===== COUNTER ANIMATION ===== */
+        .counter {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+        <span class="preloader-text">مطعم الشرق</span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils"></i> الشرق
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured">الأطباق المميزة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">المنيو</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">معرض الصور</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">آراء العملاء</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                </ul>
+                <a href="tel:0509312930" class="nav-link nav-btn">
+                    <i class="fas fa-phone-alt me-1"></i> اتصل الآن
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="floating-element float-1"></div>
+        <div class="floating-element float-2"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i> أفضل مطعم شرقي لعام 2026
+                    </div>
+                    <h1>استمتع بأشهى<br><span>النكهات الشرقية</span><br>الأصيلة</h1>
+                    <p>نقدم لكم تجربة طعام فريدة تجمع بين الأصالة والإبداع، مع أجود المكونات الطازجة وأمهر الطهاة لنقدم
+                        لكم أطباقاً تأسر الحواس</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn-primary-custom me-3">
+                            <i class="fas fa-book-open me-2"></i> تصفح المنيو
+                        </a>
+                        <a href="tel:0509312930" class="btn-outline-custom">
+                            <i class="fas fa-phone-alt me-2"></i> اتصل الآن
+                        </a>
+                        <a href="https://wa.me/966509312930" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp me-2"></i> واتساب
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+                                    <div class="stat-label">سنوات خبرة</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number"><span class="counter" data-target="120">0</span>+</div>
+                                    <div class="stat-label">طبق مميز</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number"><span class="counter" data-target="50">0</span>K+</div>
+                                    <div class="stat-label">عميل سعيد</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-subtitle">✦ اكتشف الأفضل ✦</span>
+                <h2 class="section-title">أطباقنا <span>المميزة</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">اكتشف مجموعة منتقاة من أشهى الأطباق التي يعدها طهاتنا بعناية فائقة</p>
+            </div>
+            <div class="row g-4">
+                <!-- Dish 1 -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="dish-card">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500"
+                                alt="مندي لحم">
+                            <span class="dish-badge"><i class="fas fa-fire me-1"></i> الأكثر طلباً</span>
+                            <span class="dish-rating"><i class="fas fa-star me-1"></i> 4.9</span>
+                        </div>
+                        <div class="dish-content">
+                            <h4>مندي لحم</h4>
+                            <p>لحم طازج مطهو على الحطب مع أرز بسمتي بالتوابل الخاصة</p>
+                            <div class="dish-footer">
+                                <div class="dish-price">75 <small>ر.س</small></div>
+                                <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish 2 -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="dish-card">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500"
+                                alt="مشاوي مشكلة">
+                            <span class="dish-badge"
+                                style="background: linear-gradient(135deg, var(--gold), #e67e22)"><i
+                                    class="fas fa-crown me-1"></i> طبق الشيف</span>
+                            <span class="dish-rating"><i class="fas fa-star me-1"></i> 4.8</span>
+                        </div>
+                        <div class="dish-content">
+                            <h4>مشاوي مشكلة</h4>
+                            <p>تشكيلة فاخرة من اللحوم المشوية على الفحم مع صلصات خاصة</p>
+                            <div class="dish-footer">
+                                <div class="dish-price">120 <small>ر.س</small></div>
+                                <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish 3 -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="dish-card">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=500"
+                                alt="كبسة دجاج">
+                            <span class="dish-badge" style="background: linear-gradient(135deg, #27ae60, #2ecc71)"><i
+                                    class="fas fa-leaf me-1"></i> صحي</span>
+                            <span class="dish-rating"><i class="fas fa-star me-1"></i> 4.7</span>
+                        </div>
+                        <div class="dish-content">
+                            <h4>كبسة دجاج</h4>
+                            <p>دجاج مشوي مع أرز الكبسة بالزعفران والمكسرات</p>
+                            <div class="dish-footer">
+                                <div class="dish-price">55 <small>ر.س</small></div>
+                                <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-subtitle">✦ قائمة الطعام ✦</span>
+                <h2 class="section-title">تصفح <span>المنيو</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">اختر من بين مجموعة واسعة من الأطباق الشرقية والغربية الشهية</p>
+            </div>
+
+            <div class="menu-tabs fade-up">
+                <button class="menu-tab active" data-category="all"><i class="fas fa-th"></i> الكل</button>
+                <button class="menu-tab" data-category="appetizers"><i class="fas fa-seedling"></i> المقبلات</button>
+                <button class="menu-tab" data-category="main"><i class="fas fa-drumstick-bite"></i> الأطباق
+                    الرئيسية</button>
+                <button class="menu-tab" data-category="grills"><i class="fas fa-fire"></i> المشويات</button>
+                <button class="menu-tab" data-category="desserts"><i class="fas fa-ice-cream"></i> الحلويات</button>
+                <button class="menu-tab" data-category="drinks"><i class="fas fa-coffee"></i> المشروبات</button>
+            </div>
+
+            <div class="row" id="menuContainer">
+                <div class="col-lg-6 fade-up">
+                    <!-- Appetizers -->
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=100"
+                            class="menu-item-img" alt="حمص">
+                        <div class="menu-item-info">
+                            <h5>حمص بالطحينة</h5>
+                            <p>حمص كريمي مع طحينة وزيت زيتون</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">18 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=100" class="menu-item-img"
+                            alt="فتوش">
+                        <div class="menu-item-info">
+                            <h5>سلطة فتوش</h5>
+                            <p>خضروات طازجة مع خبز مقرمش ودبس الرمان</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">22 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=100"
+                            class="menu-item-img" alt="سمبوسة">
+                        <div class="menu-item-info">
+                            <h5>سمبوسة باللحم</h5>
+                            <p>سمبوسة مقرمشة محشوة باللحم والبهارات</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">25 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="main">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=100"
+                            class="menu-item-img" alt="كبسة">
+                        <div class="menu-item-info">
+                            <h5>كبسة لحم</h5>
+                            <p>أرز بسمتي مع لحم الخروف والزعفران</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">85 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="main">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=100"
+                            class="menu-item-img" alt="مندي">
+                        <div class="menu-item-info">
+                            <h5>مندي دجاج</h5>
+                            <p>دجاج مدخن مع أرز المندي الخاص</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">65 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1579888944880-d98341245702?w=100"
+                            class="menu-item-img" alt="كنافة">
+                        <div class="menu-item-info">
+                            <h5>كنافة نابلسية</h5>
+                            <p>كنافة بالجبنة مع القطر والفستق</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">30 ر.س</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up">
+                    <div class="menu-item" data-category="grills">
+                        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=100"
+                            class="menu-item-img" alt="شيش طاووق">
+                        <div class="menu-item-info">
+                            <h5>شيش طاووق</h5>
+                            <p>صدور دجاج متبلة مشوية على الفحم</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">55 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="grills">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=100" class="menu-item-img"
+                            alt="كباب">
+                        <div class="menu-item-info">
+                            <h5>كباب لحم</h5>
+                            <p>كباب لحم غنم مفروم مع البهارات الشرقية</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">60 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="grills">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=100" class="menu-item-img"
+                            alt="ريش غنم">
+                        <div class="menu-item-info">
+                            <h5>ريش غنم مشوية</h5>
+                            <p>ريش غنم طرية مع أعشاب وصوص خاص</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">95 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="main">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=100"
+                            class="menu-item-img" alt="برياني">
+                        <div class="menu-item-info">
+                            <h5>برياني هندي</h5>
+                            <p>أرز برياني مع الدجاج والتوابل الهندية</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">70 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=100" class="menu-item-img"
+                            alt="عصير">
+                        <div class="menu-item-info">
+                            <h5>عصير طازج</h5>
+                            <p>عصائر فواكه طازجة حسب الاختيار</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">15 ر.س</div>
+                    </div>
+                    <div class="menu-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=100" class="menu-item-img"
+                            alt="بقلاوة">
+                        <div class="menu-item-info">
+                            <h5>بقلاوة تركية</h5>
+                            <p>طبقات رقيقة مع فستق حلبي وقطر</p>
+                        </div>
+                        <div class="menu-item-dots"></div>
+                        <div class="menu-item-price">28 ر.س</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-subtitle">✦ لحظاتنا ✦</span>
+                <h2 class="section-title">معرض <span>الصور</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">لقطات من أجواء مطعمنا وأطباقنا الشهية</p>
+            </div>
+            <div class="gallery-grid fade-up">
+                <div class="gallery-item"
+                    data-lightbox="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="أجواء المطعم">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>أجواء المطعم</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-lightbox="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600" alt="تقديم الأطباق">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>تقديم الأطباق</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-lightbox="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600" alt="المشويات">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>المشويات</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-lightbox="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=1200">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=600" alt="الحلويات">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>الحلويات</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-lightbox="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600" alt="صالة VIP">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>صالة VIP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close"><i class="fas fa-times"></i></button>
+        <img src="" alt="صورة مكبرة" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-subtitle">✦ ماذا يقولون عنا ✦</span>
+                <h2 class="section-title">آراء <span>عملائنا</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">نفتخر بثقة عملائنا ورضاهم عن خدماتنا وأطباقنا</p>
+            </div>
+            <div class="row fade-up" id="testimonialSlider">
+                <div class="col-lg-4 col-md-6 testimonial-slide" data-index="0">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"تجربة رائعة لا تُنسى! الطعام لذيذ جداً والخدمة ممتازة. المندي أفضل
+                            مندي تذوقته في حياتي. أنصح الجميع بزيارة هذا المطعم."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-avatar"
+                                alt="أحمد">
+                            <div>
+                                <div class="testimonial-name">أحمد الخالدي</div>
+                                <div class="testimonial-role">عميل دائم</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 testimonial-slide" data-index="1">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"مكان مثالي للعائلات والمناسبات. الأجواء هادئة وأنيقة، والطعام طازج
+                            ولذيذ. المشويات المشكلة كانت استثنائية بكل ما تعنيه الكلمة."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="testimonial-avatar"
+                                alt="سارة">
+                            <div>
+                                <div class="testimonial-name">سارة العتيبي</div>
+                                <div class="testimonial-role">مدونة طعام</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 testimonial-slide" data-index="2">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"الكبسة هنا لها طعم خاص ومميز. الخدمة سريعة والعاملون ودودون جداً.
+                            المكان نظيف ومرتب. سأعود حتماً مرة أخرى مع الأصدقاء!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" class="testimonial-avatar"
+                                alt="محمد">
+                            <div>
+                                <div class="testimonial-name">محمد السالم</div>
+                                <div class="testimonial-role">رجل أعمال</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider-controls fade-up">
+                <button class="slider-btn" id="prevBtn"><i class="fas fa-arrow-right"></i></button>
+                <button class="slider-btn" id="nextBtn"><i class="fas fa-arrow-left"></i></button>
+                <div class="slider-dots" id="sliderDots">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-subtitle">✦ نحن هنا لخدمتك ✦</span>
+                <h2 class="section-title">تواصل <span>معنا</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">يسعدنا تواصلكم واستقبال ملاحظاتكم وحجوزاتكم</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>العنوان</h5>
+                        <p>شارع الملك فهد<br>الرياض، المملكة العربية السعودية</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h5>الهاتف</h5>
+                        <p><a href="tel:0509312930">0509312930</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>البريد الإلكتروني</h5>
+                        <p><a href="mailto:info@alsharq.com">info@alsharq.com</a><br><a
+                                href="mailto:book@alsharq.com">book@alsharq.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>ساعات العمل</h5>
+                        <p>السبت - الخميس: 12 ظ - 12 م<br>الجمعة: 1 م - 12 م</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 fade-up">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h4 class="mb-4" style="font-weight:800;">
+                            <i class="fas fa-paper-plane me-2" style="color:var(--primary)"></i> أرسل لنا رسالة
+                        </h4>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="الاسم" required>
+                                        <label for="name"><i class="fas fa-user me-2"></i> الاسم الكامل</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="الهاتف" required>
+                                        <label for="phone"><i class="fas fa-phone me-2"></i> رقم الهاتف</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="البريد"
+                                            required>
+                                        <label for="email"><i class="fas fa-envelope me-2"></i> البريد
+                                            الإلكتروني</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="الرسالة"
+                                            style="height:120px" required></textarea>
+                                        <label for="message"><i class="fas fa-comment me-2"></i> رسالتك</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary-custom w-100">
+                                        <i class="fas fa-paper-plane me-2"></i> إرسال الرسالة
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.674591093822!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <span class="footer-brand"><i class="fas fa-utensils me-2"></i> الشرق</span>
+                    <p class="footer-text">نقدم لكم أشهى الأطباق الشرقية الأصيلة بمكونات طازجة وجودة عالية. تجربة طعام
+                        فريدة تجمع بين الأصالة والإبداع في أجواء راقية ومميزة.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">روابط سريعة</h5>
+                    <ul class="footer-links">
+                        <li><a href="#hero"><i class="fas fa-chevron-left me-2"></i>الرئيسية</a></li>
+                        <li><a href="#featured"><i class="fas fa-chevron-left me-2"></i>الأطباق المميزة</a></li>
+                        <li><a href="#menu"><i class="fas fa-chevron-left me-2"></i>المنيو</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-left me-2"></i>معرض الصور</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-left me-2"></i>آراء العملاء</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-left me-2"></i>تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">ساعات العمل</h5>
+                    <ul class="footer-hours list-unstyled">
+                        <li><span>السبت</span><span>12:00 ظ - 12:00 م</span></li>
+                        <li><span>الأحد</span><span>12:00 ظ - 12:00 م</span></li>
+                        <li><span>الإثنين</span><span>12:00 ظ - 12:00 م</span></li>
+                        <li><span>الثلاثاء</span><span>12:00 ظ - 12:00 م</span></li>
+                        <li><span>الأربعاء</span><span>12:00 ظ - 12:00 م</span></li>
+                        <li><span>الخميس</span><span>12:00 ظ - 1:00 ص</span></li>
+                        <li><span>الجمعة</span><span>1:00 م - 1:00 ص</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">النشرة البريدية</h5>
+                    <p class="footer-text">اشترك للحصول على أحدث العروض والأخبار</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="بريدك الإلكتروني"
+                            style="background:rgba(255,255,255,0.05);border:1px solid rgba(200,169,126,0.2);color:#fff;border-radius:10px 0 0 10px;padding:12px;">
+                        <button class="btn"
+                            style="background:var(--primary);color:var(--dark);font-weight:700;border-radius:0 10px 10px 0;padding:12px 20px;">اشترك</button>
+                    </div>
+                    <p class="footer-text" style="font-size:0.8rem;">
+                        <i class="fas fa-shield-alt me-1" style="color:var(--primary)"></i>
+                        نحترم خصوصيتك ولن نشارك بياناتك
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 مطعم الشرق. جميع الحقوق محفوظة | صُنع بـ <i class="fas fa-heart" style="color:var(--red)"></i>
+                    في المملكة العربية السعودية</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // ===== PRELOADER =====
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    $('#preloader').addClass('hide');
+                    setTimeout(function () {
+                        $('#preloader').remove();
+                    }, 500);
+                }, 1500);
+            });
+
+            // Fallback: hide preloader after 3 seconds
+            setTimeout(function () {
+                $('#preloader').addClass('hide');
+            }, 3000);
+
+            // ===== NAVBAR SCROLL =====
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 80) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+
+                // Scroll to top button
+                if ($(this).scrollTop() > 500) {
+                    $('#scrollTop').addClass('active');
+                } else {
+                    $('#scrollTop').removeClass('active');
+                }
+
+                // Active nav link
+                var scrollPos = $(document).scrollTop() + 100;
+                $('section').each(function () {
+                    var top = $(this).offset().top;
+                    var bottom = top + $(this).outerHeight();
+                    var id = $(this).attr('id');
+                    if (scrollPos >= top && scrollPos < bottom) {
+                        $('.nav-link').removeClass('active');
+                        $('.nav-link[href="#' + id + '"]').addClass('active');
+                    }
+                });
+            });
+
+            // ===== SMOOTH SCROLL =====
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 70
+                    }, 800, 'swing');
+                    // Close mobile nav
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+
+            // ===== SCROLL TO TOP =====
+            $('#scrollTop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 600);
+            });
+
+            // ===== COUNTER ANIMATION =====
+            var counted = false;
+            $(window).scroll(function () {
+                if (!counted && $(window).scrollTop() > $('.hero-stats').offset().top - $(window).height() + 100) {
+                    counted = true;
+                    $('.counter').each(function () {
+                        var $this = $(this);
+                        var target = parseInt($this.data('target'));
+                        $({ count: 0 }).animate({ count: target }, {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.count));
+                            },
+                            complete: function () {
+                                $this.text(target);
+                            }
+                        });
+                    });
+                }
+            });
+
+            // ===== FADE UP ON SCROLL =====
+            function checkFadeUp() {
+                $('.fade-up').each(function () {
+                    var elementTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height() - 100;
+                    if (elementTop < windowBottom) {
+                        $(this).addClass('visible');
+                    }
+                });
+            }
+            $(window).scroll(checkFadeUp);
+            checkFadeUp();
+
+            // ===== MENU TABS =====
+            $('.menu-tab').click(function () {
+                $('.menu-tab').removeClass('active');
+                $(this).addClass('active');
+                var category = $(this).data('category');
+
+                if (category === 'all') {
+                    $('.menu-item').fadeIn(400);
+                } else {
+                    $('.menu-item').hide();
+                    $('.menu-item[data-category="' + category + '"]').fadeIn(400);
+                }
+            });
+
+            // ===== LIGHTBOX =====
+            $('.gallery-item').click(function () {
+                var imgSrc = $(this).data('lightbox');
+                $('#lightboxImg').attr('src', imgSrc);
+                $('#lightbox').addClass('active');
+                $('body').css('overflow', 'hidden');
+            });
+
+            $('.lightbox-close, #lightbox').click(function (e) {
+                if (e.target === this || $(e.target).closest('.lightbox-close').length) {
+                    $('#lightbox').removeClass('active');
+                    $('body').css('overflow', 'auto');
+                }
+            });
+
+            $(document).keydown(function (e) {
+                if (e.key === 'Escape') {
+                    $('#lightbox').removeClass('active');
+                    $('body').css('overflow', 'auto');
+                }
+            });
+
+            // ===== TESTIMONIAL SLIDER (for mobile) =====
+            var currentSlide = 0;
+            var totalSlides = $('.testimonial-slide').length;
+
+            function updateSlider() {
+                if ($(window).width() < 768) {
+                    $('.testimonial-slide').hide();
+                    $('.testimonial-slide[data-index="' + currentSlide + '"]').fadeIn(400);
+                } else {
+                    $('.testimonial-slide').show();
+                }
+                // Update dots
+                $('.slider-dot').removeClass('active');
+                $('.slider-dot[data-slide="' + currentSlide + '"]').addClass('active');
+            }
+
+            $('#nextBtn').click(function () {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            });
+
+            $('#prevBtn').click(function () {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            });
+
+            $('.slider-dot').click(function () {
+                currentSlide = parseInt($(this).data('slide'));
+                updateSlider();
+            });
+
+            $(window).resize(updateSlider);
+            updateSlider();
+
+            // Auto slide
+            setInterval(function () {
+                if ($(window).width() < 768) {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateSlider();
+                }
+            }, 5000);
+
+            // ===== ADD TO CART ANIMATION =====
+            $('.btn-add-cart').click(function (e) {
+                e.preventDefault();
+                var $btn = $(this);
+                $btn.html('<i class="fas fa-check"></i>');
+                $btn.css('background', 'linear-gradient(135deg, #27ae60, #2ecc71)');
+                setTimeout(function () {
+                    $btn.html('<i class="fas fa-plus"></i>');
+                    $btn.css('background', 'linear-gradient(135deg, var(--primary), var(--gold))');
+                }, 1500);
+            });
+
+            // ===== CONTACT FORM =====
+            $('#contactForm').submit(function (e) {
+                e.preventDefault();
+                var $btn = $(this).find('button[type="submit"]');
+                var originalText = $btn.html();
+
+                $btn.html('<i class="fas fa-spinner fa-spin me-2"></i> جاري الإرسال...');
+                $btn.prop('disabled', true);
+
+                setTimeout(function () {
+                    $btn.html('<i class="fas fa-check me-2"></i> تم الإرسال بنجاح!');
+                    $btn.css('background', 'linear-gradient(135deg, #27ae60, #2ecc71)');
+
+                    setTimeout(function () {
+                        $btn.html(originalText);
+                        $btn.css('background', 'linear-gradient(135deg, var(--primary), var(--gold))');
+                        $btn.prop('disabled', false);
+                        $('#contactForm')[0].reset();
+                    }, 2500);
+                }, 2000);
+            });
+
+            // ===== PARALLAX on scroll =====
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                $('.hero').css('background-position', 'center ' + (scroll * 0.3) + 'px');
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
